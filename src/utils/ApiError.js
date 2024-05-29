@@ -6,7 +6,7 @@ class ApiError extends Error {
     errors = [],
     stack = ""
   ){
-    //setting propety
+    //setting property
     super(message)
     this.statusCode = statusCode
     this.data = null
