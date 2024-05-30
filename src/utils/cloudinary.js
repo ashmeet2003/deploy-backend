@@ -21,5 +21,8 @@ const uploadOnCloudinary = async (localFilePath) => {
   } catch(error) {
     //if file not uploaded, remove from sever - we use fs for this
     fs.unlinkSync(localFilePath)   // to make it synchronous
+    return null;
   }
 } 
+
+export {uploadOnCloudinary}
